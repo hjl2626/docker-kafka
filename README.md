@@ -5,8 +5,8 @@ docker kafka
 [github](https://github.com/hjl2626/docker-kafka)
 
 ## 启动方式
-mkdir -p /data/kakfa/data/
-mkdir -p /data/kakfa/config/
+mkdir -p [/data/kakfa/data/](https://github.com/hjl2626/docker-kafka/tree/master/data/kafka)
+mkdir -p [/data/kakfa/config/](https://github.com/hjl2626/docker-kafka/tree/master/data/kafka)
 
 
 数据目录, 端口 , zk地址请修改 server.properties
@@ -20,4 +20,4 @@ kafka:2.12-2.6.2
 
 ## 集群部署
 
-docker-compose -f docker-compose.yml up -d
+docker-compose -f [docker-compose.yml](https://github.com/hjl2626/docker-kafka/blob/master/docker-compose.yml) up -d
