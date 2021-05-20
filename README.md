@@ -1,6 +1,8 @@
 # docker-kafka
 docker kafka
 原生kafka
+相关配置文件地址
+[github](https://github.com/hjl2626/docker-kafka)
 
 ## 启动方式
 mkdir -p /data/kakfa/data/
