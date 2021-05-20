@@ -10,6 +10,8 @@ services:
     volumes:
       - /data/kakfa/kafka1/data:/data/kafka-logs
       - /data/kakfa/kafka1/config:/opt/kafka/config
+    networks:
+      - zk-network
 
   kafka2:
     image: kafka:2.12-2.6.2
@@ -20,6 +22,8 @@ services:
     volumes:
       - /data/kakfa/kafka2/data:/data/kafka-logs
       - /data/kakfa/kafka2/config:/opt/kafka/config
+    networks:
+      - zk-network
 
   kafka3:
     image: kafka:2.12-2.6.2
@@ -30,4 +34,9 @@ services:
     volumes:
       - /data/kakfa/kafka3/data:/data/kafka-logs
       - /data/kakfa/kafka3/config:/opt/kafka/config
+    networks:
+      - zk-network
 
+networks:
+  zk-network:
+    external: true
