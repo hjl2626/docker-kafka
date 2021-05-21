@@ -7,13 +7,14 @@ docker kafka
 ## 启动方式
 mkdir -p [/data/kakfa/data/](https://github.com/hjl2626/docker-kafka/tree/master/data/kafka)
 mkdir -p [/data/kakfa/config/](https://github.com/hjl2626/docker-kafka/tree/master/data/kafka)
-
+mkdir -p [/data/kakfa/logs/](https://github.com/hjl2626/docker-kafka)
 
 数据目录, 端口 , zk地址请修改 server.properties
 docker run -itd --name kafka \
 -p 9092:9092 \
 -v /data/kakfa/data:/data/kafka-logs \
--v/data/kakfa/config:/opt/kafka/config \
+-v /data/kakfa/config:/opt/kafka/config \
+-v /data/kakfa/logs:/opt/kafka/logs \
 kafka:2.12-2.6.2
 
 
